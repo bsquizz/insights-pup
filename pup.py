@@ -57,7 +57,7 @@ kafka_consumer = AIOKafkaConsumer(
     group_id=MQ_GROUP_ID
 )
 kafka_producer = AIOKafkaProducer(
-    loop=loop, bootstrap_servers=MQ, request_timeout_ms=10000,
+    loop=loop, bootstrap_servers=MQ, request_timeout_ms=60000,
     connections_max_idle_ms=None
 )
 
